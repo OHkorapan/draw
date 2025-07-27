@@ -20,7 +20,7 @@ export default function ProfileHeader() {
             Hint img 2.
           </p>
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSImoCPOn11gSCLJY7ndEUxAAqxXW9bOLILbw&s"
+            src="https://i.insider.com/65e47257ce7f1785b2e5bdd5?width=1200&format=jpeg"
             alt="Hint Image"
             className="w-full max-w-xs mx-auto rounded-lg shadow-md"
           />
