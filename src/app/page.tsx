@@ -30,7 +30,7 @@ export default function ProfileHeader() {
        <div className="px-6 pt-6 dark:border-slate-700/50">
         <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
           <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint 3: This section gives you useful guidance.
+            Hint 3: good country
           </p>
         </div>
       </div>
