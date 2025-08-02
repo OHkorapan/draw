@@ -1,84 +1,107 @@
-"use client"; // สำหรับ Next.js 13+ ใน /app
+import React from 'react';
 
-import React from "react";
+export default function Game() {
+  // -------------------------------
+  // |                             |
+  // |          Round 1            |
+  // |                             |
+  // -------------------------------
+  const player1 = "bad";
+  const player2 = "bad";
+  const player3 = "good";
+  const player4 = "good";
+  // -------------------------------
+  // |                             |
+  // |          Round 2            |
+  // |                             |
+  // -------------------------------
 
-export default function ProfileHeader() {
-  return (
-    <div>
+  const player5 = "good";
+  const player6 = "bad";
+  const player7 = "bad";
+  const player8 = "good";
+  // -------------------------------
+  // |                             |
+  // |          Round 3            |
+  // |                             |
+  // -------------------------------
 
-      <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint 1: This section gives you useful guidance: They purchases Alaska from Russia for dirt cheap.
-          </p>
+  const player9 = "bad";
+  const player10 = "bad";
+  const player11 = "bad";
+  const player12 = "bad";
+  // -------------------------------
+  // |                             |
+  // |          Round 4            |
+  // |                             |
+  // -------------------------------
+
+  const player13 = "good";
+  const player14 = "good";
+  const player15 = "good";
+  const player16 = "good";
+  // -------------------------------
+  // |                             |
+  // |          Round 5            |
+  // |                             |
+  // -------------------------------
+
+  const player17 = "bad";
+  const player18 = "good";
+  const player19 = "good";
+  const player20 = "bad";
+
+  // สร้างฟังก์ชันแสดงผู้เล่นแบบรวม
+  const renderPlayers = (players: string[]) => (
+    <div className="flex h-16 mb-4">
+      {players.map((p, index) => (
+        <div
+          key={index}
+          className={`flex-1 flex items-center justify-center text-white text-lg font-bold ${p === "good" ? "bg-blue-500" : p === "bad" ? "bg-red-500" : "bg-white"
+            }`}
+        >
+          {p || "?"}
         </div>
-      </div>
 
-      <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint img 2.
-          </p>
-          <img
-            src="https://i.insider.com/65e47257ce7f1785b2e5bdd5?width=1200&format=jpeg"
-            alt="Hint Image"
-            className="w-full max-w-xs mx-auto rounded-lg shadow-md"
-          />
-        </div>
-      </div>
-
-       <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint 3: good country
-          </p>
-        </div>
-      </div>
-
-      <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint img 4.
-          </p>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSImoCPOn11gSCLJY7ndEUxAAqxXW9bOLILbw&s"
-            alt="Hint Image"
-            className="w-full max-w-xs mx-auto rounded-lg shadow-md"
-          />
-        </div>
-      </div>
-
-      <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint 5: This section gives you useful guidance.
-          </p>
-        </div>
-      </div>
-
-      <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint img 6.
-          </p>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSImoCPOn11gSCLJY7ndEUxAAqxXW9bOLILbw&s"
-            alt="Hint Image"
-            className="w-full max-w-xs mx-auto rounded-lg shadow-md"
-          />
-        </div>
-      </div>
-
-       <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint 7: This section gives you useful guidance.
-          </p>
-        </div>
-      </div>
-
+      ))}
     </div>
+  );
 
+const getTeamStatus = ([A, B, C, D]: string[]) => {
+  if ([A, B, C, D].some(p => p === "bad")) {
+    return "bad team win";
+  } else if ([A, B, C, D].every(p => p === "good")) {
+    return "good team win";
+  } else {
+    return "";
+  }
+};
 
+  return (
+    <div className="min-h-screen bg-gray-100 p-4">
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player1, player2, player3, player4])}</h1>
+      {renderPlayers([player1, player2, player3, player4])}
+
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player5, player6, player7, player8])}</h1>
+      {renderPlayers([player5, player6, player7, player8])}
+
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player9, player10, player11, player12])}</h1>
+      {renderPlayers([player9, player10, player11, player12])}
+
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player13, player14, player15, player16])}</h1>
+      {renderPlayers([player13, player14, player15, player16])}
+
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">Team 5</h1>
+      <p className="mb-2 text-black">{getTeamStatus([player17, player18, player19, player20])}</p>
+      {renderPlayers([player17, player18, player19, player20])}
+
+      {/* Main content area */}
+      <div className="p-8 bg-white shadow rounded mt-8">
+        <h2 className="text-xl font-bold text-gray-800 mb-2">Main Content Area</h2>
+        <p className="text-gray-600">
+          This is the main content area below the colored header sections. You can add your page content here.
+        </p>
+      </div>
+    </div>
   );
 }
