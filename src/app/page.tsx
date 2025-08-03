@@ -6,12 +6,12 @@ export default function Game() {
   // |          Round 1            |
   // |                             |
   // -------------------------------
-  const player1 = "good";
-  const player2 = "good";
-  const player3 = "bad";
-  const player4 = "good";
-  const player5 = "good";
-  const player6 = "good";
+  const player1 = "";
+  const player2 = "";
+  const player3 = "";
+  const player4 = "bad";
+  const player5 = "";
+  const player6 = "";
   // -------------------------------
   // |                             |
   // |          Round 2            |
@@ -111,3 +111,4 @@ const getTeamStatus = ([A, B, C, D,E, F]: string[]) => {
     </div>
   );
 }
+2335555
