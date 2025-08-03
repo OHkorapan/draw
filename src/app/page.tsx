@@ -8,7 +8,7 @@ export default function Game() {
   // -------------------------------
   const player1 = "good";
   const player2 = "good";
-  const player3 = "bad";
+  const player3 = "gut";
   const player4 = "good";
   const player5 = "good";
   const player6 = "good";
