@@ -1,84 +1,113 @@
-"use client"; // สำหรับ Next.js 13+ ใน /app
+import React from 'react';
 
-import React from "react";
+export default function Game() {
+  // -------------------------------
+  // |                             |
+  // |          Round 1            |
+  // |                             |
+  // -------------------------------
+  const player1 = "good";
+  const player2 = "good";
+  const player3 = "bad";
+  const player4 = "good";
+  const player5 = "good";
+  const player6 = "good";
+  // -------------------------------
+  // |                             |
+  // |          Round 2            |
+  // |                             |
+  // -------------------------------
 
-export default function ProfileHeader() {
-  return (
-    <div>
+  const player7 = "";
+  const player8 = "";
+  const player9 = "";
+  const player10 = "";
+  const player11 = "";
+  const player12 = "";
+  // -------------------------------
+  // |                             |
+  // |          Round 3            |
+  // |                             |
+  // -------------------------------
 
-      <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint 1: This section gives you useful guidance: They purchases Alaska from Russia for dirt cheap.
-          </p>
+  const player13 = "";
+  const player14 = "";
+  const player15 = "";
+  const player16 = "";
+  const player17 = "";
+  const player18 = "";
+  // -------------------------------
+  // |                             |
+  // |          Round 4            |
+  // |                             |
+  // -------------------------------
+
+  const player19 = "";
+  const player20 = "";
+  const player21 = "";
+  const player22 = "";
+  const player23 = "";
+  const player24 = "";
+  // -------------------------------
+  // |                             |
+  // |          Round 5            |
+  // |                             |
+  // -------------------------------
+
+  const player25 = "";
+  const player26 = "";
+  const player27 = "";
+  const player28 = "";
+  const player29 = "";
+  const player30 = "";
+
+  // สร้างฟังก์ชันแสดงผู้เล่นแบบรวม
+  const renderPlayers = (players: string[]) => (
+    <div className="flex h-16 mb-4">
+      {players.map((p, index) => (
+        <div
+          key={index}
+          className={`flex-1 flex items-center justify-center text-white text-lg font-bold ${p === "good" ? "bg-blue-500" : p === "bad" ? "bg-red-500" : "bg-white"
+            }`}
+        >
+          {p || "?"}
         </div>
-      </div>
 
-      <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint img 2.
-          </p>
-          <img
-            src="https://i.insider.com/65e47257ce7f1785b2e5bdd5?width=1200&format=jpeg"
-            alt="Hint Image"
-            className="w-full max-w-xs mx-auto rounded-lg shadow-md"
-          />
-        </div>
-      </div>
-
-       <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint 3: good country
-          </p>
-        </div>
-      </div>
-
-      <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint img 4.
-          </p>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSImoCPOn11gSCLJY7ndEUxAAqxXW9bOLILbw&s"
-            alt="Hint Image"
-            className="w-full max-w-xs mx-auto rounded-lg shadow-md"
-          />
-        </div>
-      </div>
-
-      <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint 5: This section gives you useful guidance.
-          </p>
-        </div>
-      </div>
-
-      <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint img 6.
-          </p>
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSImoCPOn11gSCLJY7ndEUxAAqxXW9bOLILbw&s"
-            alt="Hint Image"
-            className="w-full max-w-xs mx-auto rounded-lg shadow-md"
-          />
-        </div>
-      </div>
-
-       <div className="px-6 pt-6 dark:border-slate-700/50">
-        <div className="bg-white/80 dark:bg-slate-800/40 backdrop-blur-xl border border-gray-200/50 dark:border-slate-700/50 rounded-2xl p-8 hover:bg-white/90 dark:hover:bg-slate-700/50 hover:border-gray-300/80 dark:hover:border-slate-600/60 transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/25">
-          <p className="text-gray-600 dark:text-slate-300 text-lg">
-            Hint 7: This section gives you useful guidance.
-          </p>
-        </div>
-      </div>
-
+      ))}
     </div>
+  );
 
+const getTeamStatus = ([A, B, C, D,E, F]: string[]) => {
+  if ([A, B, C, D,E,F].some(p => p === "bad")) {
+    return "bad team win";
+  } else if ([A, B, C, D,E,F].every(p => p === "good")) {
+    return "good team win";
+  } else {
+    return "";
+  }
+};
 
+  return (
+    <div className="min-h-screen bg-gray-100 p-4">
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">Team 1</h1>
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player1, player2, player3, player4, player5, player6])}</h1>
+      {renderPlayers([player1, player2, player3, player4, player5, player6])}
+
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">Team 2</h1>
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player7, player8, player9, player10, player11, player12])}</h1>
+      {renderPlayers([player7, player8, player9, player10, player11, player12])}
+
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">Team 3</h1>
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player13, player14, player15, player16, player17, player18])}</h1>
+      {renderPlayers([player13, player14, player15, player16, player17, player18])}
+
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">Team 4</h1>
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player19, player20, player21, player22, player23, player24])}</h1>
+      {renderPlayers([player19, player20, player21, player22, player23, player24])}
+
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">Team 5</h1>
+      <p className="mb-2 text-black">{getTeamStatus([player25, player26, player27, player28, player29, player30])}</p>
+      {renderPlayers([player25, player26, player27, player28, player29, player30])}   
+    </div>
   );
 }
