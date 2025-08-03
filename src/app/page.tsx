@@ -32,7 +32,7 @@ export default function Game() {
 
   const player13 = "";
   const player14 = "";
-  const player15 = "";
+  const player15 = "good";
   const player16 = "";
   const player17 = "";
   const player18 = "";
