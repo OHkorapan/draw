@@ -7,11 +7,10 @@ export default function Game() {
   // |                             |
   // -------------------------------
   const player1 = "good";
-  const player2 = "";
-  const player3 = "";
-  const player4 = "";   
+  const player2 = "good";
+  const player3 = "bad";
+  const player4 = "good";
   const player5 = "good";
-  const player6 = "";
   // -------------------------------
   // |                             |
   // |          Round 2            |
@@ -19,11 +18,10 @@ export default function Game() {
   // -------------------------------
 
   const player7 = "";
-  const player8 = "good";
+  const player8 = "";
   const player9 = "";
   const player10 = "";
   const player11 = "";
-  const player12 = "";
   // -------------------------------
   // |                             |
   // |          Round 3            |
@@ -35,7 +33,6 @@ export default function Game() {
   const player15 = "";
   const player16 = "";
   const player17 = "";
-  const player18 = "";
   // -------------------------------
   // |                             |
   // |          Round 4            |
@@ -47,7 +44,6 @@ export default function Game() {
   const player21 = "";
   const player22 = "";
   const player23 = "";
-  const player24 = "";
   // -------------------------------
   // |                             |
   // |          Round 5            |
@@ -59,7 +55,6 @@ export default function Game() {
   const player27 = "";
   const player28 = "";
   const player29 = "";
-  const player30 = "";
 
   // สร้างฟังก์ชันแสดงผู้เล่นแบบรวม
   const renderPlayers = (players: string[]) => (
@@ -77,10 +72,10 @@ export default function Game() {
     </div>
   );
 
-const getTeamStatus = ([A, B, C, D,E, F]: string[]) => {
-  if ([A, B, C, D,E,F].some(p => p === "bad")) {
+const getTeamStatus = ([A, B, C, D,E]: string[]) => {
+  if ([A, B, C, D,E].some(p => p === "bad")) {
     return "bad team win";
-  } else if ([A, B, C, D,E,F].every(p => p === "good")) {
+  } else if ([A, B, C, D,E].every(p => p === "good")) {
     return "good team win";
   } else {
     return "";
@@ -90,24 +85,24 @@ const getTeamStatus = ([A, B, C, D,E, F]: string[]) => {
   return (
     <div className="min-h-screen bg-gray-100 p-4">
       <h1 className="text-2xl font-bold text-gray-800 mb-4">Team 1</h1>
-      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player1, player2, player3, player4, player5, player6])}</h1>
-      {renderPlayers([player1, player2, player3, player4, player5, player6])}
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player1, player2, player3, player4, player5])}</h1>
+      {renderPlayers([player1, player2, player3, player4, player5])}
 
       <h1 className="text-2xl font-bold text-gray-800 mb-4">Team 2</h1>
-      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player7, player8, player9, player10, player11, player12])}</h1>
-      {renderPlayers([player7, player8, player9, player10, player11, player12])}
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player7, player8, player9, player10, player11])}</h1>
+      {renderPlayers([player7, player8, player9, player10, player11])}
 
       <h1 className="text-2xl font-bold text-gray-800 mb-4">Team 3</h1>
-      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player13, player14, player15, player16, player17, player18])}</h1>
-      {renderPlayers([player13, player14, player15, player16, player17, player18])}
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player13, player14, player15, player16, player17])}</h1>
+      {renderPlayers([player13, player14, player15, player16, player17])}
 
       <h1 className="text-2xl font-bold text-gray-800 mb-4">Team 4</h1>
-      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player19, player20, player21, player22, player23, player24])}</h1>
-      {renderPlayers([player19, player20, player21, player22, player23, player24])}
+      <h1 className="text-2xl font-bold text-gray-800 mb-4">{getTeamStatus([player19, player20, player21, player22, player23])}</h1>
+      {renderPlayers([player19, player20, player21, player22, player23])}
 
       <h1 className="text-2xl font-bold text-gray-800 mb-4">Team 5</h1>
-      <p className="mb-2 text-black">{getTeamStatus([player25, player26, player27, player28, player29, player30])}</p>
-      {renderPlayers([player25, player26, player27, player28, player29, player30])}   
+      <p className="mb-2 text-black">{getTeamStatus([player25, player26, player27, player28, player29])}</p>
+      {renderPlayers([player25, player26, player27, player28, player29])}   
     </div>
   );
 }
