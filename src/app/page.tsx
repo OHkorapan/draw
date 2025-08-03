@@ -6,19 +6,11 @@ export default function Game() {
   // |          Round 1            |
   // |                             |
   // -------------------------------
-<<<<<<< HEAD
   const player1 = "good";
   const player2 = "";
   const player3 = "";
   const player4 = "";   
-  const player5 = "";
-=======
-  const player1 = "";
-  const player2 = "";
-  const player3 = "";
-  const player4 = "";
   const player5 = "good";
->>>>>>> Moji
   const player6 = "";
   // -------------------------------
   // |                             |
