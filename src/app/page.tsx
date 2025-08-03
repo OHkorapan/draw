@@ -17,11 +17,11 @@ export default function Game() {
   // |                             |
   // -------------------------------
 
-  const player7 = "";
-  const player8 = "";
-  const player9 = "";
-  const player10 = "";
-  const player11 = "";
+  const player7 = "good";
+  const player8 = "good";
+  const player9 = "bad";
+  const player10 = "bad";
+  const player11 = "good";
   // -------------------------------
   // |                             |
   // |          Round 3            |
