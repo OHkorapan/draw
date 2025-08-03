@@ -19,7 +19,7 @@ export default function Game() {
   // -------------------------------
 
   const player7 = "";
-  const player8 = "";
+  const player8 = "good";
   const player9 = "";
   const player10 = "";
   const player11 = "";
